@@ -122,3 +122,45 @@ output = """
 command = input(output)
 
 # Your implementation here...
+
+
+# Creating an account
+
+verification_cost = 1500
+user_db = []
+user_name1 = input("Enter username:")
+password = input("Enter password:")
+comfirm_password = input("Confirm password:")
+initial_balance= float(input("Enter balance:"))
+is_verified = False
+
+if password == comfirm_password :
+    print(f"Account created for {user_name1}")
+else:
+    print("Invalid credentials")
+
+#verification cost
+print(f"Verification cost is {verification_cost}")
+verification = input("Enter yes/no:")
+yes = "yes"
+no = "no"
+if verification == yes :
+    user_amount= int(input("Enter amount:"))
+    if user_amount >= verification_cost :
+        user_amount - verification_cost
+        is_verified = True
+    else:
+        print(f"Your balance {user_amount} is insufficient")
+
+else:
+    print(f"Login successful {user_name1}")
+
+#LOGIN FUNCTIONALITY
+	
+user_name2 = input("Enter username:")
+password2 = input("Enter password:")
+if user_name2 == user_name1 and password2 == password :
+    print(f"Login successful {user_name1}")
+else:
+    print(f"Username {user_name1} not found")
+    print(f"Password mismatch for {user_name1}")
