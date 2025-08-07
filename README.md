@@ -192,3 +192,4 @@ This project is for educational purposes only.
 ---
 
 *Happy Coding! 🐍*# reg_portal
+# reg_portal
